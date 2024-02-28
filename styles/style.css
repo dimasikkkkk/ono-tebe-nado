@@ -1,19 +1,17 @@
 /* ШАПКА САЙТА */
 
-
-.header{
+.header {
   display: grid;
-  grid-template-columns: 1fr 2fr 1.62fr;
+  grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 92px 50px 90px;
   gap: 36px;
+  padding: 92px 50px 90px;
 }
 
 .header__links-list {
   display: flex;
   gap: 32px;
 }
-
 
 /* Список */
 
@@ -25,7 +23,7 @@
   letter-spacing: 0.01em;
 }
 
-.header__link{
+.header__link {
   border-bottom: 1px solid #000;
   text-decoration: none;
   white-space: nowrap;
@@ -37,7 +35,6 @@
 .header__links-list-item_no-bullit {
   letter-spacing: 0;
   list-style: none;
-
 }
 
 .header__link_active {
@@ -49,7 +46,6 @@
 
 .header__logo {
   display: block;
-
 }
 
 .header__logo-image {
@@ -61,32 +57,31 @@
 
 .address {
   display: block;
+  justify-self: end;
+  padding-right: 35px;
 }
 
-
 .header__address {
+  border-bottom: 1px solid #000;
+  color: #000;
   font-weight: 400;
   font-size: 18px;
+  font-style: normal;
   line-height: 135%;
   letter-spacing: 0.01em;
-  color: #000;
-  font-style: normal;
   text-decoration: none;
-  border-bottom: 1px solid #000;
 }
 
 .address p {
   border-bottom: none;
 }
 
-
 /* Cover */
 
 .cover {
   position: relative;
-  z-index: -1;
   height: 100%;
-  background: url(/images/cover.jpg) 50% 0%/cover no-repeat;/* Центрирует изображение 50% 0%/cover*/
+  background: url(/images/cover.jpg) 50% 0% / cover no-repeat; /* Центрирует изображение 50% 0%/cover*/
 }
 
 /* Полупрозразный блок */
@@ -132,9 +127,9 @@
 
 .aligned-text_right {
   display: block;
+  padding-bottom: 5px;
   line-height: 100%;
   text-align: right;
-  padding-bottom: 5px;
 }
 
 .letter-spacing-extended {
@@ -155,7 +150,7 @@
   align-items: center;
   align-self: center;
   padding-right: 50px;
-  padding-bottom: 45px;
+  padding-bottom: 51px;
   text-align: center;
 }
 
@@ -192,7 +187,7 @@
 }
 
 .lots__heading {
-  padding: 184px 0 27px 64px;
+  padding: 184px 0 21px 64px;
   color: #000;
   font-weight: 700;
   font-size: 40px;
@@ -206,7 +201,6 @@
   padding: 0 24px 30px;
   text-decoration: none;
   list-style: none;
-
 }
 
 .lots__card-list-item {
@@ -217,7 +211,7 @@
 /* Карточки */
 
 .card-link {
-  display: block;
+  display: flex;
   height: 100%;
   text-decoration: none;
   list-style: none;
@@ -225,12 +219,10 @@
 
 .card {
   position: relative;
-  z-index: -1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 334px;
-  height: 100%;
   padding: 51px 40px 48px;
 }
 
@@ -257,15 +249,15 @@
 /* Типы карточек */
 
 .card_type_film {
-  background: url(/images/card-lot-01.jpg) 50% 0%/cover no-repeat; 
+  background: url(/images/card-lot-01.jpg) 50% 0% / cover no-repeat;
 }
 
 .card_type_book {
-  background: url(/images/card-lot-02.jpg) 50% 0%/cover no-repeat;
+  background: url(/images/card-lot-02.jpg) 50% 0% / cover no-repeat;
 }
 
 .card_type_picture {
-  background: url(/images/card-lot-03.jpg) 50% 0%/cover no-repeat;
+  background: url(/images/card-lot-03.jpg) 50% 0% / cover no-repeat;
 }
 
 /* Ссылка */
@@ -286,8 +278,6 @@
   width: 100%;
   padding: 184px 24px 157px 72px;
 }
-
-
 
 .about_logo {
   display: flex;
@@ -329,7 +319,6 @@
   letter-spacing: 0.01em;
 }
 
-
 .footer {
   display: flex;
   justify-content: space-between;
@@ -337,21 +326,21 @@
 }
 
 .footer__menu {
-  text-align: center;
   padding-left: 31px;
+  text-align: center;
 }
 
 .footer__menu-list {
-  list-style: none; 
+  list-style: none;
 }
 
 .footer__menu-link {
-  text-decoration: none;
-  font-size: 18px;
-  text-align: center;
+  border-bottom: 1px solid #000;
   color: #000;
   font-weight: 400;
-  border-bottom: 1px solid #000;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
   text-decoration: none;
   white-space: nowrap;
 }
